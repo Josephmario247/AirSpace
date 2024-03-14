@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Home from './pages/Home'
 import Listing from './pages/Listing'
 import Error from './pages/Error'
@@ -8,20 +8,22 @@ import Services from './pages/Services'
 import Blog from './pages/Blog'
 import Header from './components/Header'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 
 export default function App() {
-  function PageLayOut(){
-    return<>
-    <Header />
-    <Outlet />
+  function PageLayOut() {
+    return <>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   }
   const pageRoutes = createBrowserRouter([
-  {
-    path: "/",
-    element: <PageLayOut />,
-    children: [
+    {
+      path: "/",
+      element: <PageLayOut />,
+      children: [
         {
           path: "/",
           element: <Home />
@@ -29,36 +31,36 @@ export default function App() {
         {
           path: "/abouts",
           element: <About />,
-      },
-      {
+        },
+        {
           path: "/listing",
           element: <Listing />
-      },
-      {
+        },
+        {
           path: "/services",
           element: <Services />
-      },
-      {
+        },
+        {
           path: "/blogs",
           element: <Blog />
-      },
-      {
+        },
+        {
           path: "/contacts",
           element: <Contact />
-      },
-      
-    ]
-  },
-  
-  {
-    path: "*",
-    element: <Error />
-  }
+        },
+
+      ]
+    },
+
+    {
+      path: "*",
+      element: <Error />
+    }
 
   ])
   return (
-   <div className="">
-    <RouterProvider router={pageRoutes}></RouterProvider>
-   </div>
+    <div className="bg-white">
+      <RouterProvider router={pageRoutes}></RouterProvider>
+    </div>
   )
 }

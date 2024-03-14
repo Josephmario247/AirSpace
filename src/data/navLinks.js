@@ -7,7 +7,7 @@
     {
       id:"23451",
       text: "About Us",
-      url: "/about",
+      url: "/abouts",
     },
     {
       id:"23452",
@@ -17,11 +17,11 @@
     {
       id:"23453",
       text: "Blog",
-      url: "/blog",
+      url: "/blogs",
     },
     {
       id:"23454",
       text: "Contact Us",
-      url: "/contact",
+      url: "/contacts",
     },
   ]

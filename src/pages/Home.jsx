@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { estate_frontal, estate_home2, estate_home5, estate_keys, estate_sky } from "../assets/images";
+import {
+  estate_frontal,
+  estate_home2,
+  estate_home5,
+  estate_keys,
+  estate_sky,
+} from "../assets/images";
 import { PiAlarm, PiWarehouse } from "react-icons/pi";
 import FeatureSlide from "../components/FeatureSlide";
 
@@ -27,7 +33,7 @@ export default function Home() {
           </p>
           <div className=" flex flex-col xl:flex-row xl:gap-6">
             <div className="bg-white hover:drop-shadow-2xl rounded-md p-4 mt-4 flex item-center gap-4">
-              <div className="h-8 md:h-12 w-8 md:w-12 rounded-full grid place-items-center bg-yellow-500 flex-shrink-0 text-slate-800 text-2xl md:text-3xl">
+              <div className="h-8 md:h-12 w-8 md:w-12 rounded-full grid place-items-center bg-orange-500 flex-shrink-0 text-slate-800 text-2xl md:text-3xl">
                 <PiWarehouse />
               </div>
               <div className="flex flex-col">
@@ -58,7 +64,7 @@ export default function Home() {
           </div>
         </aside>
       </section>
-      <section className="relative py-20 md:pt-40 px-4 to-slate-950 from-slate-700 bg-gradient-to-b -mx-4 my-8">
+      <section className="relative py-20 md:pt-40 px-4 to-slate-950 from-slate-700 bg-gradient-to-b -mx-4 mt-10">
         <img
           src={estate_home5}
           alt=""
@@ -111,35 +117,75 @@ export default function Home() {
       </section>
       <section className="flex flex-col md:flex-row top-10 gap-8 md:gap-x-20 md:item-center mx-auto container">
         <aside className="flex flex-1 flex-col gap-3 py-5 md:py-10">
-          <h2 className="text-orange-400 font-semibold text-lg md:text-xl ">Discover Our Services</h2>
-          <h1 className="text-slate-700 font-semibold text-xl md:text-2xl capitalize">what we are providing</h1>
-          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, laboriosam quibusdam aspernatur quos fugit debitis dolores aperiam facilis placeat. Odit!</p>
-          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quaerat ea optio odio molestias officia cupiditate porro, iure quidem hic itaque facilis facere ut molestiae eveniet? Consequuntur dolorem corrupti modi.</p>
+          <h2 className="text-orange-400 font-semibold text-lg md:text-xl ">
+            Discover Our Services
+          </h2>
+          <h1 className="text-slate-700 font-semibold text-xl md:text-2xl capitalize">
+            what we are providing
+          </h1>
+          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+            laboriosam quibusdam aspernatur quos fugit debitis dolores aperiam
+            facilis placeat. Odit!
+          </p>
+          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed mt-5">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem quaerat ea optio odio molestias officia cupiditate
+            porro, iure quidem hic itaque facilis facere ut molestiae eveniet?
+            Consequuntur dolorem corrupti modi.
+          </p>
         </aside>
         <aside className="flex-1 relative h-100 w-100 min-h-[300px] md:min-h-[100px] w-50 md:min-w-[100px] md:m-10 rounded-3xl overflow-hidden">
-          <img src={estate_home2} alt="" className="absolute h-full w-full top-0 left-0 object-cover" />
+          <img
+            src={estate_home2}
+            alt=""
+            className="absolute h-full w-full top-0 left-0 object-cover"
+          />
         </aside>
       </section>
-      <section className="flex flex-col md:flex-row-reverse top-10 gap-8 md:gap-x-20 md:item-center mx-auto mt-10 container">
+      <section className="flex flex-col md:flex-row-reverse top-10 gap-8 md:gap-x-20 md:item-center mx-auto mt-3 container">
         <aside className="flex flex-1 flex-col gap-3 py-5 md:py-10">
-          {/* <h2 className="text-orange-400 font-semibold text-lg md:text-xl ">Discover Our Services</h2> */}
-          <h1 className="text-slate-700 font-semibold text-xl md:text-2xl capitalize">the shortest distance between paradise and the place you call home.<hr className="border-yellow-600"></hr></h1>
-          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, laboriosam quibusdam aspernatur quos fugit debitis dolores aperiam facilis placeat. Odit!</p>
-          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem quaerat ea optio odio molestias officia cupiditate porro, iure quidem hic itaque facilis facere ut molestiae eveniet? Consequuntur dolorem corrupti modi.</p>
+          <h1 className="text-slate-700 font-semibold text-xl md:text-2xl capitalize">
+            the shortest distance between paradise and the place you call home.
+            <hr className="border-yellow mt-3"></hr>
+          </h1>
+          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+            laboriosam quibusdam aspernatur quos fugit debitis dolores aperiam
+            facilis placeat. Odit!
+          </p>
+          <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem quaerat ea optio odio molestias officia cupiditate
+            porro, iure quidem hic itaque facilis facere ut molestiae eveniet?
+            Consequuntur dolorem corrupti modi.
+          </p>
         </aside>
         <aside className="flex-1 relative h-100 w-100 min-h-[300px] md:min-h-[100px] w-50 md:min-w-[100px] rounded-3xl mt-5 overflow-hidden">
-          <img src={estate_frontal} alt="" className="absolute h-full w-full top-0 left-0 object-cover" />
+          <img
+            src={estate_frontal}
+            alt=""
+            className="absolute h-full w-full top-0 left-0 object-cover"
+          />
         </aside>
       </section>
       <section className="bg-[#f7faff]">
         <section className="container mx-auto flex flex-col gap-6 py-10">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="flex flex-col">
-              <h4 className="text-lg md:text-2xl font-semibold text-slate-800 capitalize">discover our featured properties</h4>
-              <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed"> discover best deals for your ideal dream house</p>
-
+              <h4 className="text-lg md:text-2xl font-semibold text-slate-800 capitalize">
+                discover our featured properties
+              </h4>
+              <p className="text-slate-700 text-base sm:text-lg text-justify leading-relaxed">
+                discover best deals for your ideal dream house
+              </p>
             </div>
-            <Link to="/properties" className="py-2 px-6 md:px-8 w-max border border-solid md:hover:shad border-slate-700 text-sm md:text-base rounded-full">See More</Link>
+            <Link
+              to="/properties"
+              className="py-2 px-6 md:px-8 w-max border border-solid md:hover:shad border-slate-700 text-sm md:text-base rounded-full"
+            >
+              See More
+            </Link>
           </div>
           <div className="py-8 w-full">
             <FeatureSlide />
