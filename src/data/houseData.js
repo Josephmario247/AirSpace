@@ -11,7 +11,7 @@ import {
 export const houseData = [
   {
     id: "23450",
-    image: estate_home2,
+    image: [estate_home2,estate_eating_table, estate_frontal],
     title: "Qiri minimalitc",
     price: 500000,
     featured: true,
@@ -25,7 +25,7 @@ export const houseData = [
   },
   {
     id: "23451",
-    image: estate_home5,
+    image: [estate_home5,estate_eating_table, estate_frontal],
     title: " Nsor Standard House",
     price: 7500000,
     featured: true,
@@ -40,7 +40,7 @@ export const houseData = [
   },
   {
     id: "23452",
-    image: estate_eating_table,
+    image: [estate_eating_table,estate_home2, estate_frontal],
     title: " Trigan Elegant House",
     price: 96700000,
     featured: true,
@@ -55,7 +55,7 @@ export const houseData = [
   },
   {
     id: "23453",
-    image: estate_frontal,
+    image: [estate_frontal,estate_eating_table, estate_home5],
     title: " Kiro Luxury-House",
     price: 96700000,
     featured: true,
@@ -70,7 +70,7 @@ export const houseData = [
   },
   {
     id: "23454",
-    image: estate_sky,
+    image: [estate_sky,estate_eating_table, estate_frontal],
     title: "Ndipraya Minimaliatic House",
     price: 46700000,
     featured: true,
@@ -84,7 +84,7 @@ export const houseData = [
   },
   {
     id: "23455",
-    image: estate_keys,
+    image: [estate_keys,estate_eating_table, estate_frontal],
     title: "Ndipraya House",
     price: 46700000,
     featured: true,
@@ -98,7 +98,7 @@ export const houseData = [
   },
   {
     id: "234556",
-    image: estate_keys,
+    image: [estate_keys,estate_eating_table, estate_frontal],
     title: "Qana Luxury House",
     price: 46700000,
     featured: true,

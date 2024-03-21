@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import { HiMiniBars2 } from "react-icons/hi2";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { navLinks } from '../data/navLinks';
 
 export default function Header() {
-  const [navShow, setNavShow] = useState(false)
+  const [navShow, setNavShow] = useState(false);
+  const location = useLocation()
 
   useEffect(() => {
-    document.title = `AirSpace :: Home`
-  }, [])
+    return () => {
+      setNavShow(false)
+
+    }
+  }, [location.pathname])
 
 
   return (
-    <header className="relative p-4 flex justify-between gap-4 items-center bg-[#f7faff]">
+
+    <header className="bg-white relative px-4">
+
+    <div className="container mx-auto relative py-4 flex justify-between gap-4 items-center bg-[#f7faff]">
       <div className="flex items-center gap-2 ">
         <div className="h-5 w-5 md:h-10 md:w-10 rounded-full bg-orange-500 flex-shrink-0"></div>
         <h1 className="text-gray-600 font-semibold text-sm md:text-lg">AirSpace</h1>
@@ -25,6 +32,7 @@ export default function Header() {
       <div onClick={() => setNavShow(!navShow)} className="flex p-2 border border-gray-200 hover:bg-gray-200 md:hidden rounded-md cursor-pointer">
         <HiMiniBars2 className='text-gray-600 font-bold text-lg' />
       </div>
+    </div>
     </header>
   )
 }
